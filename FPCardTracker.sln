@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FPCardTracker", "FPCardTracker.csproj", "{8069B11A-86FD-482E-A3DD-8CC5D844DF35}"
+	ProjectSection(ProjectDependencies) = postProject
+		{56E9D96B-5944-4C2E-876B-CBA44B1465AC} = {56E9D96B-5944-4C2E-876B-CBA44B1465AC}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveSplit.ScriptableAutoSplit", "LiveSplit.ScriptableAutoSplit.csproj", "{56E9D96B-5944-4C2E-876B-CBA44B1465AC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release Candidate|Any CPU = Release Candidate|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8069B11A-86FD-482E-A3DD-8CC5D844DF35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8069B11A-86FD-482E-A3DD-8CC5D844DF35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8069B11A-86FD-482E-A3DD-8CC5D844DF35}.Release Candidate|Any CPU.ActiveCfg = Release|Any CPU
+		{8069B11A-86FD-482E-A3DD-8CC5D844DF35}.Release Candidate|Any CPU.Build.0 = Release|Any CPU
+		{8069B11A-86FD-482E-A3DD-8CC5D844DF35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8069B11A-86FD-482E-A3DD-8CC5D844DF35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56E9D96B-5944-4C2E-876B-CBA44B1465AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56E9D96B-5944-4C2E-876B-CBA44B1465AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56E9D96B-5944-4C2E-876B-CBA44B1465AC}.Release Candidate|Any CPU.ActiveCfg = Release Candidate|Any CPU
+		{56E9D96B-5944-4C2E-876B-CBA44B1465AC}.Release Candidate|Any CPU.Build.0 = Release Candidate|Any CPU
+		{56E9D96B-5944-4C2E-876B-CBA44B1465AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56E9D96B-5944-4C2E-876B-CBA44B1465AC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CBC3EA6A-72A4-4AE1-8EEF-B18EB5C6145E}
+	EndGlobalSection
+EndGlobal
