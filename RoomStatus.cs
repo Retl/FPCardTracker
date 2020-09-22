@@ -131,9 +131,9 @@ namespace FPCardTracker
             // Pangu Lagoon order from: https://www.speedrun.com/fp/run/zqr34w5y
             RoomToCardMap.Add(ROOMID.PL1, new List<int>(new int[] { 82, 81 }));
             RoomToCardMap.Add(ROOMID.PL2, new List<int>(new int[] { 85, 84, 83 }));
-            RoomToCardMap.Add(ROOMID.PL3, new List<int>(new int[] { 86, 87 }));
-            RoomToCardMap.Add(ROOMID.PL4, new List<int>(new int[] { 89, 90, 88 }));
-            RoomToCardMap.Add(ROOMID.PL5, new List<int>(new int[] { }));
+            RoomToCardMap.Add(ROOMID.PL4, new List<int>(new int[] { 86, 87 }));
+            RoomToCardMap.Add(ROOMID.PL3, new List<int>(new int[] { }));
+            RoomToCardMap.Add(ROOMID.PL5, new List<int>(new int[] { 89, 90, 88 }));
             RoomToCardMap.Add(ROOMID.PL6, new List<int>(new int[] { })); // Special Move KO
 
             RoomToCardMap.Add(ROOMID.TH1, new List<int>(new int[] { 71 }));
