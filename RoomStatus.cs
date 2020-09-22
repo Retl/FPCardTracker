@@ -111,9 +111,9 @@ namespace FPCardTracker
             RoomToCardMap.Add(ROOMID.FN6, new List<int>(new int[] { })); // Assist KO RoboPanther, Special Move KO
 
             RoomToCardMap.Add(ROOMID.SBHUB, new List<int>(new int[] { })); // Dail, Special Move KO
-            RoomToCardMap.Add(ROOMID.SB1, new List<int>(new int[] { 47, 46, 45, 44 })); // Metal Ship? Extremely hard for Carol. NO PLANE. Lilac Only: LEDGE TAUNT.
-            RoomToCardMap.Add(ROOMID.SB2, new List<int>(new int[] { 43, 42, 41 })); // Fire Ship? NO PLANE.
-            RoomToCardMap.Add(ROOMID.SB3, new List<int>(new int[] { 50, 49, 48 })); // Earth Ship? Carol wants Metal Shield here. NO PLANE.
+            RoomToCardMap.Add(ROOMID.SB1, new List<int>(new int[] { 43, 42, 41 })); // Metal Ship. NO PLANE. Huge thanks to Deckard for testing this out!
+            RoomToCardMap.Add(ROOMID.SB2, new List<int>(new int[] { 47, 46, 45, 44 })); // Fire Ship. Extremely hard for Carol. NO PLANE. Lilac Only: LEDGE TAUNT. Huge thanks to Deckard for testing this out!
+            RoomToCardMap.Add(ROOMID.SB3, new List<int>(new int[] { 50, 49, 48 })); // Earth Ship. Carol wants Metal Shield here. NO PLANE.
 
             RoomToCardMap.Add(ROOMID.JC1, new List<int>(new int[] { 53, 52, 51 }));
             RoomToCardMap.Add(ROOMID.JC2, new List<int>(new int[] { 56, 55, 54 }));
