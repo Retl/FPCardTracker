@@ -27,7 +27,7 @@ namespace FPCardTracker
         FN2 = 30,
         FN3 = 31,
         FN4 = 32,
-        FM5 = 33,
+        FN5 = 33,
         FN6 = 34,
 
         SBHUB = 35,
@@ -85,8 +85,23 @@ namespace FPCardTracker
 
         public static void InitializeRoomToCardMap() 
         {
-            RoomToCardMap.Add(ROOMID.DV1, new List<int>(new int[] { 1, 2, 3, 4 }));
-            RoomToCardMap.Add(ROOMID.DV2, new List<int>(new int[] { 5 }));
+            // Card order roughly follows Revo's collection order for Carol All Cards as of 21 September 2020
+            RoomToCardMap.Add(ROOMID.DV1, new List<int>(new int[] { 1, 2, 3, 4 })); // Switch Skipper
+            RoomToCardMap.Add(ROOMID.DV2, new List<int>(new int[] { 5, 6 }));
+            RoomToCardMap.Add(ROOMID.DV3, new List<int>(new int[] { 7, 10, 8, 9 }));
+
+            RoomToCardMap.Add(ROOMID.RM1, new List<int>(new int[] { 11, 12, 13 }));
+            RoomToCardMap.Add(ROOMID.RM2, new List<int>(new int[] { 14, 15, 16 }));
+            RoomToCardMap.Add(ROOMID.RM3, new List<int>(new int[] { 17, 19, 18}));
+            RoomToCardMap.Add(ROOMID.RM4, new List<int>(new int[] { })); // Bone Seleton Here
+            RoomToCardMap.Add(ROOMID.RM5, new List<int>(new int[] { 20 })); // Mantalith Here
+
+            RoomToCardMap.Add(ROOMID.FN1, new List<int>(new int[] { 20 }));
+            RoomToCardMap.Add(ROOMID.FN2, new List<int>(new int[] { 20 }));
+            RoomToCardMap.Add(ROOMID.FN3, new List<int>(new int[] { 20 }));
+            RoomToCardMap.Add(ROOMID.FN4, new List<int>(new int[] { 20 }));
+            RoomToCardMap.Add(ROOMID.FN5, new List<int>(new int[] { 20 }));
+            RoomToCardMap.Add(ROOMID.FN6, new List<int>(new int[] { }));
         }
 
         public static List<int> GetCardsInRoom(int roomID) 
