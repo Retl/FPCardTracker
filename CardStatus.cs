@@ -57,8 +57,8 @@ namespace FPCardTracker
 
                 cards[i].Left = anchorLeft + (cardSpacingHorizontal * (i % 10));
                 cards[i].Top = anchorTop + (cardSpacingVertical * (i / cardsPerRow));
-                cards[i].FakeFrameNum = (i % FrameLastWithWait);
-                cards[i].FrameNum = (i % FrameLastWithWait);
+                cards[i].FakeFrameNum = ((FrameLastWithWait - i) % FrameLastWithWait);
+                cards[i].FrameNum = ((FrameLastWithWait - i) % FrameLastWithWait);
 
                 if (cards[i].FakeFrameNum > FrameLast)
                 {
