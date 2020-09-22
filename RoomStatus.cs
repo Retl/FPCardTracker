@@ -89,19 +89,73 @@ namespace FPCardTracker
             RoomToCardMap.Add(ROOMID.DV1, new List<int>(new int[] { 1, 2, 3, 4 })); // Switch Skipper
             RoomToCardMap.Add(ROOMID.DV2, new List<int>(new int[] { 5, 6 }));
             RoomToCardMap.Add(ROOMID.DV3, new List<int>(new int[] { 7, 10, 8, 9 }));
+            // DV4  Special Move KO
 
             RoomToCardMap.Add(ROOMID.RM1, new List<int>(new int[] { 11, 12, 13 }));
-            RoomToCardMap.Add(ROOMID.RM2, new List<int>(new int[] { 14, 15, 16 }));
+            RoomToCardMap.Add(ROOMID.RM2, new List<int>(new int[] { 14, 15, 16 })); // Push Block KO
             RoomToCardMap.Add(ROOMID.RM3, new List<int>(new int[] { 17, 19, 18}));
             RoomToCardMap.Add(ROOMID.RM4, new List<int>(new int[] { })); // Bone Seleton Here
-            RoomToCardMap.Add(ROOMID.RM5, new List<int>(new int[] { 20 })); // Mantalith Here
+            RoomToCardMap.Add(ROOMID.RM5, new List<int>(new int[] { 20 })); // Mantalith Preemptive Strike I Here, Special Move KO
 
-            RoomToCardMap.Add(ROOMID.FN1, new List<int>(new int[] { 20 }));
-            RoomToCardMap.Add(ROOMID.FN2, new List<int>(new int[] { 20 }));
-            RoomToCardMap.Add(ROOMID.FN3, new List<int>(new int[] { 20 }));
-            RoomToCardMap.Add(ROOMID.FN4, new List<int>(new int[] { 20 }));
-            RoomToCardMap.Add(ROOMID.FN5, new List<int>(new int[] { 20 }));
-            RoomToCardMap.Add(ROOMID.FN6, new List<int>(new int[] { }));
+            RoomToCardMap.Add(ROOMID.AT1, new List<int>(new int[] { 50 }));
+            RoomToCardMap.Add(ROOMID.AT2, new List<int>(new int[] { 50 }));
+            RoomToCardMap.Add(ROOMID.AT3, new List<int>(new int[] { 50 }));
+            RoomToCardMap.Add(ROOMID.AT4, new List<int>(new int[] { 50 }));
+
+            RoomToCardMap.Add(ROOMID.FN1, new List<int>(new int[] { 31, 32 }));
+            RoomToCardMap.Add(ROOMID.FN2, new List<int>(new int[] { 35, 34, 33 }));
+            RoomToCardMap.Add(ROOMID.FN3, new List<int>(new int[] { 36 }));
+            RoomToCardMap.Add(ROOMID.FN4, new List<int>(new int[] { 38, 37 })); // Piano and Dance here
+            RoomToCardMap.Add(ROOMID.FN5, new List<int>(new int[] { 39, 40 })); // Piano and Dance here
+            RoomToCardMap.Add(ROOMID.FN6, new List<int>(new int[] { })); // Assist KO RoboPanther, Special Move KO
+
+            RoomToCardMap.Add(ROOMID.SBHUB, new List<int>(new int[] { })); // Dail, Special Move KO
+            RoomToCardMap.Add(ROOMID.SB1, new List<int>(new int[] { 47, 46, 45, 44 })); // Metal Ship? Extremely hard for Carol. NO PLANE. Lilac Only: LEDGE TAUNT.
+            RoomToCardMap.Add(ROOMID.SB2, new List<int>(new int[] { 43, 42, 41 })); // Fire Ship? NO PLANE.
+            RoomToCardMap.Add(ROOMID.SB3, new List<int>(new int[] { 50, 49, 48 })); // Earth Ship? Carol wants Metal Shield here. NO PLANE.
+
+            RoomToCardMap.Add(ROOMID.JC1, new List<int>(new int[] { 53, 52, 51 }));
+            RoomToCardMap.Add(ROOMID.JC2, new List<int>(new int[] { 56, 55, 54 }));
+            RoomToCardMap.Add(ROOMID.JC3, new List<int>(new int[] { 57 }));
+            RoomToCardMap.Add(ROOMID.JC4, new List<int>(new int[] { 60, 59, 58}));
+            // RoomToCardMap.Add(ROOMID.JC5, new List<int>(new int[] { })); // Serp. Special Move KO
+
+            RoomToCardMap.Add(ROOMID.TB1, new List<int>(new int[] { 61 }));
+            RoomToCardMap.Add(ROOMID.TB2, new List<int>(new int[] { 62 }));
+            RoomToCardMap.Add(ROOMID.TB3, new List<int>(new int[] { 64, 63 }));
+            RoomToCardMap.Add(ROOMID.TB4, new List<int>(new int[] { 66, 65 }));
+            RoomToCardMap.Add(ROOMID.TB5, new List<int>(new int[] { 70, 67, 69, 68 })); // NICE. Syntax, Special Move KO
+            // RoomToCardMap.Add(ROOMID.TB6, new List<int>(new int[] { }));
+
+            RoomToCardMap.Add(ROOMID.PL1, new List<int>(new int[] { 50 }));
+            RoomToCardMap.Add(ROOMID.PL2, new List<int>(new int[] { 50 }));
+            RoomToCardMap.Add(ROOMID.PL3, new List<int>(new int[] { 50 }));
+            RoomToCardMap.Add(ROOMID.PL4, new List<int>(new int[] { 50 }));
+            RoomToCardMap.Add(ROOMID.PL5, new List<int>(new int[] { 50 }));
+            RoomToCardMap.Add(ROOMID.PL6, new List<int>(new int[] { 50 }));
+
+            RoomToCardMap.Add(ROOMID.TH1, new List<int>(new int[] { 71 }));
+            RoomToCardMap.Add(ROOMID.TH2, new List<int>(new int[] { 75, 74, 73, 72 }));
+            RoomToCardMap.Add(ROOMID.TH3, new List<int>(new int[] { 80, 79, 78, 77, 76 })); // Special Move KO
+
+            RoomToCardMap.Add(ROOMID.BG1, new List<int>(new int[] { 91, 92 }));
+            RoomToCardMap.Add(ROOMID.BG2, new List<int>(new int[] { 94, 93 }));
+            RoomToCardMap.Add(ROOMID.BG3, new List<int>(new int[] { 96, 95 }));
+            RoomToCardMap.Add(ROOMID.BG4, new List<int>(new int[] { 97, 98 }));
+            RoomToCardMap.Add(ROOMID.BG5, new List<int>(new int[] { 99 }));
+            RoomToCardMap.Add(ROOMID.BG6, new List<int>(new int[] { 50 }));
+
+            /*
+             * FD HAS NO CARDS.
+            RoomToCardMap.Add(ROOMID.FD1, new List<int>(new int[] { }));
+            RoomToCardMap.Add(ROOMID.FD1, new List<int>(new int[] { }));
+            RoomToCardMap.Add(ROOMID.FD1, new List<int>(new int[] { }));
+            RoomToCardMap.Add(ROOMID.FD1, new List<int>(new int[] { }));
+            RoomToCardMap.Add(ROOMID.FD1, new List<int>(new int[] { }));
+            RoomToCardMap.Add(ROOMID.FD1, new List<int>(new int[] { }));
+            RoomToCardMap.Add(ROOMID.FD1, new List<int>(new int[] { }));
+            RoomToCardMap.Add(ROOMID.FD1, new List<int>(new int[] { }));
+            */
         }
 
         public static List<int> GetCardsInRoom(int roomID) 
