@@ -57,15 +57,25 @@ namespace FPCardTracker
                 {
                     lblDebug.Text = "Vars populated: ";
 
-                    dynamic current = aslComponent.Script.State.Data;
-                    if (current.roomID != null) {
-                        int roomID = current.roomID;
-                        lblDebug.Text += "Room ID: " + roomID.ToString();
-                        UpdateCardsInRoom(roomID);
+                    try
+                    {
+                        dynamic current;
+                        current = aslComponent.Script.State.Data;
+                        if (current.roomID != null)
+                        {
+                            int roomID = current.roomID;
+                            lblDebug.Text += "Room ID: " + roomID.ToString();
+                            UpdateCardsInRoom(roomID);
 
 
-                        UpdateCardsCollected((IDictionary<String, object>)current);
+                            UpdateCardsCollected((IDictionary<String, object>)current);
+                        }
                     }
+                    catch (Exception ex) {
+                        // Maybe actually handle this for reals later.
+                    }
+                     
+                    
                 }
                 else
                 {

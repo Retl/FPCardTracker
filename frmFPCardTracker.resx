@@ -120,4 +120,19 @@
   <metadata name="tmrUpdate.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAFRsQAAEABAAYAgAAFgAAACgAAAAVAAAANgAAAAEABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AABoJCAAqEBAAKhEQAAgPKAA0ExIAMhMUADQTFAAAGywAACI2AAInPgAANT4AIDo+AD4/PgAAAAAAAAA
+        AAAAAAAA3d3d3d3d3d3d3dAA3ZqqqqqqqqqqndAA2aqqqqqqqqqqqdAA2ZkAAAAAAAAJmdAA2qABFERE
+        REQRqtAA2ZAUVVVVVVVBmdAA2ZARRVVVVUFUmdAA2IBMEUVVQRxUiNAA2ZBMzBRUHMxVmdAA13BFzMER
+        zMVVd9AA2IBFzMzMzMVViNAA13BFTMzMzGVVd9AA0zBEHMzMzBZVM9AA13BBzMzMzMFVd9AA0zAczMzM
+        zMwVM9AA0zDMzMzMzMzFM9AA0zBFVUzMRVVVM9AA0zBFVVzMVVVVM9AA2ZBFVVXFVVVUmdAA2qAlVVXF
+        VVVUqtAA2qAUVVVVVVVBqtAA2qABFEREREYRqtAA2qAAAAAAAAAAqtAA26kAAAAAAAAJq9AA3MzMzMzM
+        zMzMzNAA3czMzMzMzMzMzdAA3d3d3d3d3d3d3dAA///4AMAAGACAAAgAgAAIAIAACACAAAgAgAAIAIAA
+        CACAAAgAgAAIAIAACACAAAgAgAAIAIAACACAAAgAgAAIAIAACACAAAgAgAAIAIAACACAAAgAgAAIAIAA
+        CACAAAgAgAAIAMAAGAD///gA
+</value>
+  </data>
 </root>
