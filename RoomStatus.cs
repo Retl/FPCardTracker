@@ -93,8 +93,8 @@ namespace FPCardTracker
 
             RoomToCardMap.Add(ROOMID.RM1, new List<int>(new int[] { 11, 12, 13 }));
             RoomToCardMap.Add(ROOMID.RM2, new List<int>(new int[] { 14, 15, 16 })); // Push Block KO
-            RoomToCardMap.Add(ROOMID.RM3, new List<int>(new int[] { 17, 19, 18}));
-            RoomToCardMap.Add(ROOMID.RM4, new List<int>(new int[] { })); // Bone Seleton Here
+            RoomToCardMap.Add(ROOMID.RM3, new List<int>(new int[] { 17}));
+            RoomToCardMap.Add(ROOMID.RM4, new List<int>(new int[] { 19, 18 })); // Bone Seleton Here
             RoomToCardMap.Add(ROOMID.RM5, new List<int>(new int[] { 20 })); // Mantalith Preemptive Strike I Here, Special Move KO
 
             // Aqua Tunnel order from - https://www.speedrun.com/fp/run/y43d58dz 
