@@ -60,11 +60,17 @@ namespace FPCardTracker
                     try
                     {
                         dynamic current;
+                        dynamic old;
                         current = aslComponent.Script.State.Data;
+                        old = aslComponent.Script.OldState.Data;
                         if (current.roomID != null)
                         {
                             int roomID = current.roomID;
+                            int oldRoomID = old.roomID;
                             lblDebug.Text += "Room ID: " + roomID.ToString();
+                            if (roomID != oldRoomID) {
+                                Console.WriteLine("Room ID: " + roomID.ToString());
+                            }
                             UpdateCardsInRoom(roomID);
 
 
@@ -73,6 +79,7 @@ namespace FPCardTracker
                     }
                     catch (Exception ex) {
                         // Maybe actually handle this for reals later.
+                        Console.WriteLine(ex.Message);
                     }
                      
                     
