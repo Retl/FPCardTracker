@@ -19,6 +19,7 @@ namespace FPCardTracker
         SolidBrush blackBrush = new SolidBrush(Color.Black);
         SolidBrush magentaBrush = new SolidBrush(Color.Magenta);
         List<int> cardsInRoom = new List<int>();
+        List<int> achievementsInRoom = new List<int>();
 
         public frmFPCardTracker()
         {
@@ -40,8 +41,13 @@ namespace FPCardTracker
             CardSelector.LoadImages();
             LevelStatus.LoadImages();
 
+            AchievementStatus.LoadImages();
+            AchievementSelector.LoadImages();
+
             CardStatus.Cards = CardStatus.GenerateCards();
+            AchievementStatus.Achievements = AchievementStatus.GenerateAchievements();
             RoomStatus.InitializeRoomToCardMap();
+            RoomStatus.InitializeRoomToAchievementMap();
         }
 
         private void tmrUpdate_Tick(object sender, EventArgs e)
@@ -72,9 +78,11 @@ namespace FPCardTracker
                                 Console.WriteLine("Room ID: " + roomID.ToString());
                             }
                             UpdateCardsInRoom(roomID);
+                            UpdateAchievementsInRoom(roomID);
 
 
                             UpdateCardsCollected((IDictionary<String, object>)current);
+                            UpdateAchievementsCollected((IDictionary<String, object>)current);
                         }
                     }
                     catch (Exception ex) {
@@ -102,6 +110,16 @@ namespace FPCardTracker
             foreach (int cardID in cardsInRoom) {
                 CardSelector.DrawSelector(e, CardStatus.Cards[cardID - 1]);
             }
+
+            for (int i = 0; i < AchievementStatus.Achievements.Count; i++)
+            {
+                AchievementStatus.DrawAchievement(e, AchievementStatus.Achievements[i]);
+            }
+
+            foreach (int achievementID in cardsInRoom)
+            {
+                AchievementSelector.DrawSelector(e, AchievementStatus.Achievements[achievementID - 1]);
+            }
         }
 
         private void UpdateCardsInRoom(int roomID) 
@@ -109,11 +127,24 @@ namespace FPCardTracker
             cardsInRoom = RoomStatus.GetCardsInRoom(roomID);
         }
 
+        private void UpdateAchievementsInRoom(int roomID)
+        {
+            achievementsInRoom = RoomStatus.GetAchievementsInRoom(roomID);
+        }
+
         private void UpdateCardsCollected(IDictionary<String, object> current) 
         {
             for (int i = 0; i < CardStatus.Cards.Count; i++) 
             {
                 CardStatus.Cards[i].SetCollected((int)(current["card" + (i + 1)]));
+            }
+        }
+
+        private void UpdateAchievementsCollected(IDictionary<String, object> current)
+        {
+            for (int i = 0; i < AchievementStatus.Achievements.Count; i++)
+            {
+                AchievementStatus.Achievements[i].SetCollected((int)(current["achievement" + (i + 1)]));
             }
         }
     }

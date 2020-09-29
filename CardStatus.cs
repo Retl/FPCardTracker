@@ -42,7 +42,8 @@ namespace FPCardTracker
 
         public static List<CardStatus> GenerateCards() 
         {
-            int anchorLeft = 0;
+            // AchievementOnlyScreenSize: 254, 359
+            int anchorLeft = 38;
             int anchorTop = 0;
             int cardsPerRow = 10;
             int cardSpacingHorizontal = 24;
@@ -55,7 +56,7 @@ namespace FPCardTracker
                 CardStatus cs = new CardStatus();
                 cards.Add(cs);
 
-                cards[i].Left = anchorLeft + (cardSpacingHorizontal * (i % 10));
+                cards[i].Left = anchorLeft + (cardSpacingHorizontal * (i % cardsPerRow));
                 cards[i].Top = anchorTop + (cardSpacingVertical * (i / cardsPerRow));
                 cards[i].FakeFrameNum = ((FrameLastWithWait - i) % FrameLastWithWait);
                 cards[i].FrameNum = ((FrameLastWithWait - i) % FrameLastWithWait);
